@@ -1,0 +1,38 @@
+<section class="hero is-link is-small">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <%= link_to root_path, class: 'navbar-item' do %>
+            <img src="https://img.icons8.com/glyph-neue/64/000000/ingredients.png"/>
+            <span class="has-text-weight-bold is-size-4 ml-4">Foodlog</span>
+          <% end %>
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <%= link_to "New entry", new_entry_path, class: 'button is-success'%>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        <% if content_for(:title) %>
+          <%= yield :title %>
+        <% else %>
+          Foodlog
+        <% end %>
+      </h1>
+    </div>
+  </div>
+
+
+</section>
