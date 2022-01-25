@@ -13,7 +13,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Allow load svg
-  config.assets.precompile += %w(.svg)
+  config.assets.precompile += %w[.svg]
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
