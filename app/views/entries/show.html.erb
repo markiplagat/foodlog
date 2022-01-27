@@ -24,8 +24,10 @@
 
     <div class="columns is-mobile">
       <div class="column">
-        <%= link_to 'Edit', edit_entry_path(@entry) %> |
-        <%= link_to 'Delete', entries_path(@entry) %>
+        <%= link_to 'Edit', edit_entry_path(@entry), class: "button" %>
+        <%= link_to 'Delete', entries_path(@entry), method: :delete, data: { confirm: "Are you sure?"},
+                    class: "button is-red"
+        %>
       </div>
     </div>
   </div>
