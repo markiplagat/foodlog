@@ -2,7 +2,7 @@
   <div class="column is-one-third">
     <h1 class="is-size-2 has-text-weight-bold mb-3">Editing Entry</h1>
     <%= render 'form', entry: @entry %>
-    <%= link_to 'Show', @entry %> |
-    <%= link_to 'Back', entries_path %>
+    <%= link_to 'Show', @entry, class: 'button is-info is-small'  %>
+    <%= link_to 'Back', entries_path, class: 'button is-grey is-small' %>
   </div>
 </div>
